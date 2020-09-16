@@ -1,0 +1,108 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background: hsl(0, 0%, 98%);
+  font-family: 'Be Vietnam', sans-serif;;
+  font-size: 1.6rem;
+  position: relative;
+  height: 100vh;
+  /*overflow-x: hidden;*/
+}
+
+h2 {
+    font-size: 2.7rem;
+}
+
+body::before {
+  margin-top: 30rem;
+  margin-left: -10rem;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 100rem;
+  background: hsl(13, 100%, 96%);
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 1fr;
+    grid-template-areas: 
+    "left right"
+}
+
+
+.right-block {
+    grid-area: right;
+}
+
+.left-block {
+    grid-area: left;
+    margin-top: 2rem;
+    margin-left: 14rem;
+    width: 30rem;
+}
+
+#middle-block {
+    padding-left: 50rem;
+    margin-top: -18rem;
+}
+
+h2 {
+    color: hsl(228, 39%, 23%);
+}
+
+.subject {
+    color: hsl(228, 39%, 23%);
+    
+}
+
+p {
+    color: rgb(193, 193, 193)
+}
+
+#number-header{
+    width: 6rem;
+    height: 3.2rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    background: hsl(12, 88%, 59%);
+    padding-bottom: .3rem;
+    margin-bottom: 15rem;
+    
+}
+
+#number {
+    color: white;
+    font-size: 1.8rem;
+    opacity: 50%;
+}
+
+#subject {
+    font: 700 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    transition: background 0.2s;
+
+    color: white;
+}
+
+#text-block {
+    margin-left: 2rem;
+    margin-top: 4rem;
+    margin-right: 15rem;
+}
