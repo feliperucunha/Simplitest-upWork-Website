@@ -15,7 +15,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 
-function LandingPage() {
+function Landing1() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
@@ -226,7 +226,7 @@ export default function Pricing() {
           ))}
         </Grid>
         <Box mt={5}>
-          <LandingPage />
+          <Landing1 />
         </Box>
       </Container>
       {/* End footer */}
